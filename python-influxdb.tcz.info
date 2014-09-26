@@ -1,0 +1,12 @@
+Title:          python-influxdb.tcz
+Description:    Python client for InfluxDB
+Version:        0.1.12
+Author:         Kohei Ozaki (smly)
+Original-site:  http://influxdb.com/
+Copying-policy: The MIT License
+Size:           ?K
+Extension_by:   atbrask
+Tags:           PYTHON INFLUXDB HTTP TIMESERIES DATABASE CLIENT
+Comments:       ----
+Change-log:     ----
+Current:        2014/09/26 First version
