@@ -4,7 +4,10 @@ TCZ-PACK = tcz-pack
 all: clean get build
 
 build:
-	cd influxdb-python && $(PYTHON) setup.py install --prefix=../python-influxdb/usr/local
+	mkdir -p python-influxdb/usr/local/lib/python2.7/site-packages/
+	cd influxdb-python \
+	export PYTHONPATH=../python-influxdb/usr/local/lib/python2.7/site-packages/ && \
+	$(PYTHON) setup.py install --prefix=../python-influxdb/usr/local
 	sudo echo "/etc/sysconfig/tcedir" > /opt/.tce_dir # <-- huge hack
 	$(TCZ-PACK) python-influxdb
 	cp /tmp/tcztools/python-influxdb.tcz .
