@@ -6,4 +6,3 @@ def find_packages(exclude=()):
     allpackages = ['tests', 'influxdb', 'tests.influxdb']
     return [a for a in allpackages if a not in exclude]
 
-import setup
