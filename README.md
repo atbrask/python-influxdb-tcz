@@ -2,6 +2,7 @@
 This is a script for downloading and packing the python client for InfluxDB as a TCZ extension for use on Tiny Core Linux (TCL). It outputs a file called `python-influxdb.tcz` that contains the packaged files. Also included are the other metadata files (ie. `python-influxdb.tcz.dep`, `python-influxdb.tcz.info`, `python-influxdb.tcz.list`, and `python-influxdb.tcz.md5.txt`).
 
 DISCLAIMER: This script has been tested on piCore 5.3. It may work with other versions of TCL, but YMMV...
+DISCLAIMER 2: The bundled TCZ build is for an obsolete version of influxdb and the Makefile fails to build the current version. Stay tuned for an update... (2015-11-06)
 
 #####Prerequisites
 You'll need a Tiny Core Linux installation with the following extensions (and all their dependencies) installed.
